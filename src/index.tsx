@@ -1,9 +1,13 @@
-import { render } from "react-dom";
-import Counter from "./components/Counter";
 import App from "./App";
+import { BrowserRouter } from "react-router-dom";
+import { createRoot } from 'react-dom/client';
+
+const domNode = document.getElementById('root');
+const root = createRoot(domNode);
 
 
-render(
-    <App />,
-    document.getElementById('root')
+root.render(
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
 )
