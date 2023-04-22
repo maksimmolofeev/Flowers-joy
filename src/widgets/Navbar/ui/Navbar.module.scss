@@ -1,0 +1,40 @@
+.Navbar {
+    background: white;
+    opacity: 0.7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    width: 100vw;
+    box-shadow: 0px 5px 10px var(--bg-secondary-color);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: var(--height-navbar);
+    max-width: var(--max-width-desktop);
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.contacts {
+    display: flex;
+    gap: 20px;
+}
+
+.logo {
+    width: 250px;
+}
+
+.features {
+    display: flex;
+    gap: 20px;
+}
+
+.icons {
+    width: 22px;
+    height: 22px;
+}

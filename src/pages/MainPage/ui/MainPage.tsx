@@ -1,8 +1,9 @@
+import { MainImage } from "widgets/MainImage";
 
 const MainPage = () => {
     return (
         <div>
-            MAIN
+            <MainImage />
         </div>
     );
 }
