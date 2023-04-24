@@ -1,5 +1,5 @@
 .Navbar {
-    background: white;
+    background: var(--bg-primary-color);
     opacity: 0.7;
     position: fixed;
     top: 0;
@@ -20,11 +20,6 @@
     box-sizing: border-box;
 }
 
-.contacts {
-    display: flex;
-    gap: 20px;
-}
-
 .logo {
     width: 250px;
 }
@@ -35,6 +30,12 @@
 }
 
 .icons {
-    width: 22px;
-    height: 22px;
+    height: var(--menu-icons-size);
+    width: var(--menu-icons-size);
+}
+
+@media screen and (max-width: 640px) {
+    .logo {
+        width: 150px;
+    }
 }

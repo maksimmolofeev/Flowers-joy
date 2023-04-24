@@ -11,6 +11,6 @@ body {
     width: 100vw;
 }
 
-.page-wrapper {
-    // margin-top: var(--height-navbar);
+.no_scroll {
+    overflow-y: hidden;
 }

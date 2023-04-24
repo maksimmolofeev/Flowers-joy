@@ -1,0 +1,52 @@
+.Menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: var(--height-navbar);
+    right: 0;
+    display: flex;
+    transform: translateX(130%);
+    transition: all 0.5s;
+    overflow: hidden;
+    &.active {
+        transform: translateX(0);
+        transition: all 0.5s;
+        overflow-y: hidden;
+    }
+}
+
+.blur {
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(3px);
+    position: absolute;
+    right: 30%;
+}
+
+.burger {
+    width: 30%;
+    height: 100%;
+    margin-left: auto;
+    background: var(--bg-primary-color);
+    box-shadow: -5px -1px 1px var(--bg-primary-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+}
+
+@media screen and (max-width: 640px) {
+    .blur {
+        right: 50%;
+    }
+
+    .burger {
+        width: 50%;
+    }
+
+    .contacts {
+        position: fixed;
+        bottom: 130px;
+    }
+}

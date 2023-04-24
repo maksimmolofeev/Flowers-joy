@@ -15,11 +15,10 @@ export const MainImage: React.FC<MainImageProps> = (props) => {
                     <p className={cls.text}>Подарив цветы, ты даришь любовь, эмоции и прекрасное настроение</p>
                     <p className={cls.text}>Дари, люби, вдохновляй</p>
                 </div>
-                <div className={cls.title_content}>
+                <div className={cls.title_block}>
                     <p className={cls.title}>FLOWERS</p>
                     <p className={cls.title}>JOY</p>
                 </div>
-                
             </div>
         </div>
     );
