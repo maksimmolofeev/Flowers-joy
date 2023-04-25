@@ -1,0 +1,41 @@
+{
+    "bestsellers": [
+        { 
+            "id": 1,
+            "title": "Маргарита",
+            "price": 7000,
+            "url": "https://disk.yandex.ru/i/ZAJsfa5q8Wq7BQ"
+        },
+        { 
+            "id": 2,
+            "title": "Нигрони",
+            "price": 8000,
+            "url": "https://disk.yandex.ru/i/ZAJsfa5q8Wq7BQ"
+        },
+        { 
+            "id": 3,
+            "title": "Пиноколада",
+            "price": 3000,
+            "url": "https://disk.yandex.ru/i/ZAJsfa5q8Wq7BQ"
+        },
+        { 
+            "id": 4,
+            "title": "Апероль",
+            "price": 11000,
+            "url": "https://disk.yandex.ru/i/ZAJsfa5q8Wq7BQ"
+        },
+        { 
+            "id": 5,
+            "title": "Букет",
+            "price": 9000,
+            "url": "https://disk.yandex.ru/i/ZAJsfa5q8Wq7BQ"
+        }
+    ],
+    "posts": [
+        { "id": 1, "title": "json-server", "author": "typicode" }
+    ],
+    "comments": [
+        { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" }
+}
