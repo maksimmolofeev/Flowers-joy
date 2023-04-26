@@ -1,0 +1,1 @@
+export { BouquetPageAsync as BouquetPage } from './ui/BouquetPage.async'

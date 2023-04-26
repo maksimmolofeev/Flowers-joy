@@ -1,12 +1,8 @@
-import { Link, Route, Routes } from 'react-router-dom';
 import './styles/index.scss'
-import { Suspense, useEffect, useState } from 'react';
-import { CatalogPage } from 'pages/CatalogPage';
-import { MainPage } from 'pages/MainPage';
+import { useEffect, useState } from 'react';
 import { AppRouter } from './providers/router';
 import { Navbar } from 'widgets/Navbar';
 import { Menu } from 'widgets/Menu'
-import classNames from 'classnames';
 
 const App = () => {
     const [menuActive, setMenuActive] = useState(false)

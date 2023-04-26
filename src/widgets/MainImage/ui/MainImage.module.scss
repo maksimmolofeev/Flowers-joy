@@ -7,15 +7,13 @@
 }
 
 .image {
-    
 }
 
 .text_content {
     position: absolute;
     top: calc(var(--height-navbar) + 50px);
     right: 3vw;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: var(--font-size-l);
+    font: var(--font-l);
 }
 
 .text_block {

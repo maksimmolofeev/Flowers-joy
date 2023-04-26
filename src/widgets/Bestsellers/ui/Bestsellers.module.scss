@@ -1,0 +1,16 @@
+.Bestsellers {
+    margin-top: 50px;
+    background-color: var(--bg-secondary-color);
+    width: 100%;
+}
+
+.title {
+    font-family: var(--font-family-main-title);
+    font-size: var(--font-size-xl);
+    color: var(--primary-color);
+}
+
+.content {
+    display: flex;
+    gap: 10px;
+}
