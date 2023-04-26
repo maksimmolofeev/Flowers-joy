@@ -26,7 +26,6 @@ export const BouquetCard: React.FC<BouquetCardProps> = (props) => {
                 <h3 className={cls.title}>{bouquet.title}</h3>
                 <p className={cls.price}>{bouquet.price}₽</p>
             </div>
-            
         </div>
     );
 }

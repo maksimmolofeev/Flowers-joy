@@ -20,7 +20,6 @@ const BouquetPage = () => {
         fetchBouquet()
     }, [])
 
-    console.log(bouquet)
     return (
         <div>
             BOUQUET

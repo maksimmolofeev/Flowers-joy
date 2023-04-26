@@ -11,6 +11,35 @@
 }
 
 .content {
-    display: flex;
-    gap: 10px;
+    position: relative;
+    overflow-x: scroll;
 }
+
+.slider_line {
+    display: flex;
+    gap: 15px;
+    position: relative;
+    width: var(--max-width-desktop);
+}
+
+.btn_block {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    width: 22px;
+}
+
+// @media screen and (max-width: 900px) {
+//     .Bestsellers {
+//         overflow-x: scroll;
+//     }
+
+//     .slider_line {
+//         width: 170%;
+//         position: relative;
+//     }
+// }
