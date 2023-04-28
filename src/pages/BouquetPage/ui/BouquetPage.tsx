@@ -1,5 +1,5 @@
 import axios from "axios";
-import { IBouquet } from "entities/BouquetCard";
+import { IBouquet } from "entities/Bouquet";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 

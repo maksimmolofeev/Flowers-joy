@@ -5,6 +5,10 @@ body {
     background-color: var(--bg-primary-color);
     font-size: var(--font-m);
     overflow-x: hidden;
+    
+    ::-webkit-scrollbar {
+        width: 0;
+    }
 }
 
 .app {

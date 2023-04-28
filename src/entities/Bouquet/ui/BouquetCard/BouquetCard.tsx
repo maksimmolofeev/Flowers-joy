@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { IBouquet } from '../model/types/IBouquet';
+import { IBouquet } from '../../model/types/category';
 import cls from './BouquetCard.module.scss';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 

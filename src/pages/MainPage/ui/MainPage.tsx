@@ -1,5 +1,5 @@
 import { Bestsellers } from "widgets/Bestsellers/ui/Bestsellers";
-import { Counter } from "widgets/Counter";
+import { Categories } from "widgets/Categories";
 import { MainImage } from "widgets/MainImage";
 
 const MainPage = () => {
@@ -7,6 +7,7 @@ const MainPage = () => {
         <div>
             <MainImage />
             <Bestsellers />
+            <Categories />
         </div>
     );
 }
