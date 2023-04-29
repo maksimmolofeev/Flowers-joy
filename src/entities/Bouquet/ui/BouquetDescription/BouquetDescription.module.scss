@@ -1,0 +1,40 @@
+.BouquetDescription {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10%;
+    padding-top: calc(var(--height-navbar) + 20px);
+}
+
+.return_catalog {
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    gap: 40px;
+    font: var(--font-m);
+}
+
+.img_wrapper {
+    width: 50%;
+    max-height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.img {
+    width: 100%;
+}
+
+.text_content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.title {
+    font-family: var(--font-family-main-title);
+    font-size: var(--font-size-l);
+}

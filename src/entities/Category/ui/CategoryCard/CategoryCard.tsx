@@ -4,7 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 
 interface CategoryCardProps {
-    category: ICategory
+    category: ICategory,
+    changeActiveCategory: (category: string) => void
 }
 
 export const CategoryCard: React.FC<CategoryCardProps> = (props) => {

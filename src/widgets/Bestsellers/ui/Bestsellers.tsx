@@ -24,7 +24,6 @@ export const Bestsellers: React.FC<BestsellersProps> = (props) => {
     useEffect(() => {
         fetchBestsellers()
     }, [])
-    console.log(bestsellers)
     return (
         <div className={cls.Bestsellers}>
             <Container>

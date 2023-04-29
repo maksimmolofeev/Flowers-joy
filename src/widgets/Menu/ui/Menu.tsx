@@ -1,12 +1,6 @@
-import { Link } from 'react-router-dom';
 import cls from './Menu.module.scss';
-import { AppRouter } from 'app/providers/router';
 import { AppLink } from 'shared/ui/AppLink/AppLink';
-import { IconContext } from 'react-icons';
-import { SiWhatsapp } from 'react-icons/si';
-import { FaInstagram, FaTelegramPlane } from 'react-icons/fa';
-import { FiPhoneCall } from 'react-icons/fi';
-import { EventHandler, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Contacts } from 'shared/ui/Contacts/Contacts';
 
 interface MenuProps {

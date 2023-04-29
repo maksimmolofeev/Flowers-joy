@@ -2,5 +2,6 @@ export interface IBouquet {
     id: number,
     title: string,
     price: number,
-    url: string
+    url: string,
+    categories: string[]
 }

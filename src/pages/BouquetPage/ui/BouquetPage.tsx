@@ -24,7 +24,6 @@ const BouquetPage = () => {
 
     return (
         <div>
-            BOUQUET
             <BouquetDescription bouquet={bouquet}/>
         </div>
     );

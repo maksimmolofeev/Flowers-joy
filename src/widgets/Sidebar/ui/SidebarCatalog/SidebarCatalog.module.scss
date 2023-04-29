@@ -1,7 +1,7 @@
 .SidebarCatalog {
     margin-top: calc(var(--height-navbar) + 20px);
     background: var(--bg-secondary-color);
-    min-width: 25%;
+    width: 30%;
     min-height: calc(100vh - (var(--height-navbar) + 20px));
     padding: 20px;
     position: fixed;
@@ -9,4 +9,5 @@
     flex-direction: column;
     font: var(--font-m);
     gap: 10px;
+    cursor: pointer;
 }

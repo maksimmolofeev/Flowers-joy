@@ -36,31 +36,36 @@
             "id": 1,
             "title": "Маргарита",
             "price": 7000,
-            "url": "https://4.downloader.disk.yandex.ru/preview/a91ac884e2bb8725fc1b688f803c286586201bcabd171bd5f9b607d97955efdd/inf/7zBbuElXtpX5JXGSXq1ZGlul2YC30wcxASUpv8VeifmGsCGttnbBwoFFBS5W2NQIEtrnFHyUrhYF0teg-h3_hw%3D%3D?uid=1438650916&filename=20220810_122727.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1438650916&tknv=v2&size=1894x913"
+            "url": "https://4.downloader.disk.yandex.ru/preview/a91ac884e2bb8725fc1b688f803c286586201bcabd171bd5f9b607d97955efdd/inf/7zBbuElXtpX5JXGSXq1ZGlul2YC30wcxASUpv8VeifmGsCGttnbBwoFFBS5W2NQIEtrnFHyUrhYF0teg-h3_hw%3D%3D?uid=1438650916&filename=20220810_122727.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1438650916&tknv=v2&size=1894x913",
+            "categories": ["сезонные цветы", "Авторские букеты"]
         },
         { 
             "id": 2,
             "title": "Нигрони",
             "price": 8000,
-            "url": "https://2.downloader.disk.yandex.ru/preview/18006e5801620c7049114df3e58f4ea273467b0317eeebf9bc9fe8d8797f76cc/inf/0yo0S6-GNhlIbeSNdxJ4OB1pvWQk5aJRw0DlKxYqgWKOmxic9jiRTdIYu0gPEbSmsG4R9LKVH5I5mYJ3lhQ3MA%3D%3D?uid=1438650916&filename=IMG_20221019_145425.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1438650916&tknv=v2&size=1894x913"
+            "url": "https://2.downloader.disk.yandex.ru/preview/18006e5801620c7049114df3e58f4ea273467b0317eeebf9bc9fe8d8797f76cc/inf/0yo0S6-GNhlIbeSNdxJ4OB1pvWQk5aJRw0DlKxYqgWKOmxic9jiRTdIYu0gPEbSmsG4R9LKVH5I5mYJ3lhQ3MA%3D%3D?uid=1438650916&filename=IMG_20221019_145425.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1438650916&tknv=v2&size=1894x913",
+            "categories": ["Моно букеты", "Авторские букеты"]
         },
         { 
             "id": 3,
             "title": "Пиноколада",
             "price": 3000,
-            "url": "https://2.downloader.disk.yandex.ru/preview/7e72f89affd8b3e8335be008817780864b28c7354bb560d0a7daf7c53445d063/inf/r5taS2Pyg-Asqlea13X18fIFd582lBTy-vrjrQqcKJx7-i7ebmtD17RocsV2gBQ_ZL9yi72tWhqD1WQ6vXV3IQ%3D%3D?uid=1438650916&filename=IMG_20230418_201842_509.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1438650916&tknv=v2&size=1894x913"
+            "url": "https://2.downloader.disk.yandex.ru/preview/7e72f89affd8b3e8335be008817780864b28c7354bb560d0a7daf7c53445d063/inf/r5taS2Pyg-Asqlea13X18fIFd582lBTy-vrjrQqcKJx7-i7ebmtD17RocsV2gBQ_ZL9yi72tWhqD1WQ6vXV3IQ%3D%3D?uid=1438650916&filename=IMG_20230418_201842_509.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1438650916&tknv=v2&size=1894x913",
+            "categories": ["Дуо&Трио букеты", "Корзины"]
         },
         { 
             "id": 4,
             "title": "Апероль",
             "price": 11000,
-            "url": "https://3.downloader.disk.yandex.ru/preview/3157d267039e5a661c4974d34698670a078bb545899b77ea8feb336b99d4c8b7/inf/hwP0FJrp8dgTMYxqn6BFZroC-NmUeqgthC69vDu_I-BHE49J75ObBSU9wNOvcbqbtQYbVgV2st-NRVXfp2c_Ww%3D%3D?uid=1438650916&filename=Persona_20220219_143222.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1438650916&tknv=v2&size=1894x913"
+            "url": "https://3.downloader.disk.yandex.ru/preview/3157d267039e5a661c4974d34698670a078bb545899b77ea8feb336b99d4c8b7/inf/hwP0FJrp8dgTMYxqn6BFZroC-NmUeqgthC69vDu_I-BHE49J75ObBSU9wNOvcbqbtQYbVgV2st-NRVXfp2c_Ww%3D%3D?uid=1438650916&filename=Persona_20220219_143222.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1438650916&tknv=v2&size=1894x913",
+            "categories": ["Букет невесты", "Декор"]
         },
         { 
             "id": 5,
             "title": "Букет",
             "price": 9000,
-            "url": "https://3.downloader.disk.yandex.ru/preview/65652fedba127d232193eca75ed121a1049da41adb528f4179ef15e6ca45e3e7/inf/WD67UkFPulWATpj03k649s-2EdqL6Pa1dKputMEcTqzXP8AoNU9D5QpFM514PI4X_Sn0SxrL6OJmCD2xnyVWNw%3D%3D?uid=1438650916&filename=20220601_131122.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1438650916&tknv=v2&size=1894x913"
+            "url": "https://3.downloader.disk.yandex.ru/preview/65652fedba127d232193eca75ed121a1049da41adb528f4179ef15e6ca45e3e7/inf/WD67UkFPulWATpj03k649s-2EdqL6Pa1dKputMEcTqzXP8AoNU9D5QpFM514PI4X_Sn0SxrL6OJmCD2xnyVWNw%3D%3D?uid=1438650916&filename=20220601_131122.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1438650916&tknv=v2&size=1894x913",
+            "categories": ["Дуо&Трио букеты", "Сезонные цветы"]
         }
     ],
     "categories": [
