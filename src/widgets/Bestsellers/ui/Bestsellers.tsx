@@ -24,7 +24,7 @@ export const Bestsellers: React.FC<BestsellersProps> = (props) => {
     useEffect(() => {
         fetchBestsellers()
     }, [])
-
+    console.log(bestsellers)
     return (
         <div className={cls.Bestsellers}>
             <Container>
@@ -32,7 +32,9 @@ export const Bestsellers: React.FC<BestsellersProps> = (props) => {
                 <div className={cls.content}>
                     <div className={cls.slider_line}>
                         {bestsellers.map(bouquet =>
-                            <BouquetCard key={bouquet.id} bouquet={bouquet} />
+                            <div key={bouquet.id} className={cls.bouquet_card}>
+                                <BouquetCard  bouquet={bouquet} />
+                            </div>
                         )}
                     </div>
                 </div>

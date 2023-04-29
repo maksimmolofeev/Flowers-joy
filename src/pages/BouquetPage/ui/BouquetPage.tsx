@@ -1,15 +1,16 @@
 import axios from "axios";
-import { IBouquet } from "entities/Bouquet";
+import { BouquetDescription, IBouquet } from "entities/Bouquet";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 const BouquetPage = () => {
     const {id} = useParams()
-    const [bouquet, setBouquet] = useState<IBouquet>()
+    const [bouquet, setBouquet] = useState<IBouquet | null>(null)
+    const URL = `http://localhost:5000/bouquets/${id}`
 
     const fetchBouquet = async () => {
         try {
-            const response = await axios.get(`http://localhost:5000/bouquets/${id}`)
+            const response = await axios.get(URL)
             setBouquet(response.data)
         } catch (error) {
             alert(error)
@@ -20,9 +21,11 @@ const BouquetPage = () => {
         fetchBouquet()
     }, [])
 
+
     return (
         <div>
             BOUQUET
+            <BouquetDescription bouquet={bouquet}/>
         </div>
     );
 }

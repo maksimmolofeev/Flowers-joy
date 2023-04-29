@@ -1,0 +1,15 @@
+.BouquetList {
+    width: 75%;
+    margin-left: 25%;
+    margin-top: calc(var(--height-navbar) + 20px);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    background-color: var(--bg-secondary-color);
+    flex-grow: 1;
+}
+
+.bouquet_card {
+    width: 48%;
+    max-height: 450px;
+}
