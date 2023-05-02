@@ -45,7 +45,9 @@ export const Navbar: FC<NavbarProps> = (props) => {
                         :
                         null
                 }
-                <Logo className={cls.logo} />
+                <AppLink to={RoutePath.main}>
+                    <Logo className={cls.logo} />
+                </AppLink>
                 <div className={cls.features}>
                     <IconContext.Provider value={{className: `${cls.icons}`}}>
                         <GoSearch />

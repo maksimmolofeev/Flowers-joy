@@ -1,5 +1,16 @@
-.BrieflyDelivery {
+.Companies {
     margin-top: var(--spacing-between-blocks);
+}
+
+.title {
+    font-family: var(--font-family-main-title);
+    font-size: var(--font-size-xl);
+    color: var(--primary-color);
+}
+
+.content {
+    display: flex;
+    gap: 20px;
 }
 
 .img_block {

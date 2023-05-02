@@ -2,6 +2,7 @@ import { Basket } from 'pages/Basket';
 import { BouquetPage } from 'pages/BouquetPage';
 import { CatalogPage } from 'pages/CatalogPage';
 import { DeliveryInfoPage } from 'pages/DeliveryInfoPage';
+import { LikedPage } from 'pages/LikedPage';
 import { MainPage } from 'pages/MainPage';
 import { RouteProps } from "react-router-dom"
 
@@ -10,7 +11,8 @@ export enum AppRoutes {
     CATALOG = 'catalog',
     BOUQUET = 'bouquet',
     DELIVERY_INFO = 'delivery_info',
-    BASKET = 'basket'
+    BASKET = 'basket',
+    LIKED = 'liked'
 }
 
 export const RoutePath: Record<AppRoutes, string> = {
@@ -18,7 +20,8 @@ export const RoutePath: Record<AppRoutes, string> = {
     [AppRoutes.CATALOG]: '/catalog',
     [AppRoutes.BOUQUET]: '/catalog/',
     [AppRoutes.DELIVERY_INFO]: '/delivery_info',
-    [AppRoutes.BASKET]: '/basket'
+    [AppRoutes.BASKET]: '/basket',
+    [AppRoutes.LIKED]: '/liked'
 }
 
 export const routeConfig: Record<AppRoutes, RouteProps> = {
@@ -41,5 +44,9 @@ export const routeConfig: Record<AppRoutes, RouteProps> = {
     [AppRoutes.BASKET]: {
         path: RoutePath.basket,
         element: <Basket />
+    },
+    [AppRoutes.LIKED]: {
+        path: RoutePath.liked,
+        element: <LikedPage />
     }
 }
