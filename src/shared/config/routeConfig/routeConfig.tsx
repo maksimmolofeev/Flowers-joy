@@ -1,18 +1,21 @@
 import { BouquetPage } from 'pages/BouquetPage';
 import { CatalogPage } from 'pages/CatalogPage';
+import { DeliveryInfoPage } from 'pages/DeliveryInfoPage';
 import { MainPage } from 'pages/MainPage';
 import { RouteProps } from "react-router-dom"
 
 export enum AppRoutes {
     MAIN = 'main',
     CATALOG = 'catalog',
-    BOUQUET = 'bouquet'
+    BOUQUET = 'bouquet',
+    DELIVERY_INFO = 'delivery_info'
 }
 
 export const RoutePath: Record<AppRoutes, string> = {
     [AppRoutes.MAIN]: '/',
     [AppRoutes.CATALOG]: '/catalog',
-    [AppRoutes.BOUQUET]: '/catalog/'
+    [AppRoutes.BOUQUET]: '/catalog/',
+    [AppRoutes.DELIVERY_INFO]: '/delivery_info'
 }
 
 export const routeConfig: Record<AppRoutes, RouteProps> = {
@@ -28,4 +31,8 @@ export const routeConfig: Record<AppRoutes, RouteProps> = {
         path: `${RoutePath.bouquet}:id`,
         element: <BouquetPage />
     },
+    [AppRoutes.DELIVERY_INFO]: {
+        path: RoutePath.delivery_info,
+        element: <DeliveryInfoPage />
+    }
 }

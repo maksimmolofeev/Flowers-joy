@@ -3,8 +3,7 @@ import cls from './BouquetList.module.scss';
 import { useEffect, useState } from 'react';
 import { BouquetCard, IBouquet } from 'entities/Bouquet';
 import { useSelector } from 'react-redux';
-import { getActiveCategory } from 'widgets/Categories/model/selectors/category';
-
+import { getActiveCategory } from 'entities/Category';
 
 export const BouquetList = () => {
     const URL = 'http://localhost:5000/bouquets';

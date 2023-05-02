@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
 import cls from './SidebarCatalog.module.scss';
-import { ICategory } from 'entities/Category';
+import { ICategory, categoriesActions } from 'entities/Category';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
-import { categoriesActions } from 'widgets/Categories/model/slice/categoriesSlice';
 
 interface SidebarCatalogProps {
 }

@@ -2,6 +2,7 @@ import cls from './Menu.module.scss';
 import { AppLink } from 'shared/ui/AppLink/AppLink';
 import { useEffect, useState } from 'react';
 import { Contacts } from 'shared/ui/Contacts/Contacts';
+import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 
 interface MenuProps {
     active: boolean,
@@ -29,15 +30,21 @@ export const Menu: React.FC<MenuProps> = (props) => {
             <div className={cls.burger}>
                 <AppLink
                     onClick={() => setActive(false)}
-                    to={'/'}
+                    to={RoutePath.main}
                 >
                     Главная
                 </AppLink>
                 <AppLink
                     onClick={() => setActive(false)}
-                    to={'/catalog'}
+                    to={RoutePath.catalog}
                 >
                     Каталог
+                </AppLink>
+                <AppLink
+                    onClick={() => setActive(false)}
+                    to={RoutePath.delivery_info}
+                >
+                    Доставка
                 </AppLink>
 
                 {

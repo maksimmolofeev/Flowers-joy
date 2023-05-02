@@ -26,7 +26,7 @@ export const Bestsellers: React.FC<BestsellersProps> = (props) => {
     }, [])
     return (
         <div className={cls.Bestsellers}>
-            <Container>
+            <Container flexDirectionRow={false}>
                 <h2 className={cls.title}>Бестселлеры</h2>
                 <div className={cls.content}>
                     <div className={cls.slider_line}>

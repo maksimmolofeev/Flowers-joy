@@ -1,4 +1,4 @@
-import { CategoriesSchema } from "widgets/Categories";
+import { CategoriesSchema } from "entities/Category";
 import { CounterSchema } from "widgets/Counter";
 
 export interface StateSchema {

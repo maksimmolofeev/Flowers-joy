@@ -1,0 +1,1 @@
+export { DeliveryInfoPageAsync as DeliveryInfoPage } from './ui/DeliveryInfoPage.async';

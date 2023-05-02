@@ -1,11 +1,19 @@
 .Container {
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
     max-width: var(--max-width-desktop);
     margin: 0 auto;
     padding: 15px;
     box-sizing: content-box;
     gap: 20px;
     overflow: hidden;
+
+    
+}
+
+.column {
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
 }
