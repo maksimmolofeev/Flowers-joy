@@ -49,11 +49,11 @@ export const Menu: React.FC<MenuProps> = (props) => {
 
                 {
                     width > 640
-                    ? null
-                    :
-                    <div className={cls.contacts}>
-                        <Contacts />
-                    </div>
+                        ? null
+                        :
+                        <div className={cls.contacts}>
+                            <Contacts />
+                        </div>
                 }
             </div>
         </div>

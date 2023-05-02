@@ -1,6 +1,6 @@
 import axios from 'axios';
 import cls from './BouquetList.module.scss';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { BouquetCard, IBouquet } from 'entities/Bouquet';
 import { useSelector } from 'react-redux';
 import { getActiveCategory } from 'entities/Category';
@@ -16,8 +16,7 @@ export const BouquetList = () => {
         setAllBouquets(response.data)
         setBouquetsByCategory(response.data)
     }
-
-    const sortBouquetByCategory = () => {
+    const sortBouquetByCategory = useCallback(() => {
         if (activeCategory === '') {
             setBouquetsByCategory([...allBouquets])
         } else {
@@ -26,7 +25,7 @@ export const BouquetList = () => {
             )
             setBouquetsByCategory([...newBouquetsByCategory])
         }
-    }
+    }, [activeCategory, allBouquets])
 
     useEffect(() => {
         fetchBouquets()
@@ -34,7 +33,7 @@ export const BouquetList = () => {
 
     useEffect(() => {
         sortBouquetByCategory()
-    }, [activeCategory])
+    }, [activeCategory, sortBouquetByCategory])
 
     return (
         <div className={cls.BouquetList}>

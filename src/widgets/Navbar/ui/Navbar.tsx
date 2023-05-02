@@ -39,9 +39,9 @@ export const Navbar: FC<NavbarProps> = (props) => {
             <div className={cls.content}>
                 {
                     width > 640 ?
-                    <Contacts />
-                    :
-                    null
+                        <Contacts />
+                        :
+                        null
                 }
                 <Logo className={cls.logo} />
                 <div className={cls.features}>

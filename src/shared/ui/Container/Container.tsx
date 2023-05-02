@@ -15,7 +15,11 @@ export const Container: React.FC<ContainerProps> = (props) => {
     } = props
 
     return (
-        <div className={`${cls.Container} ${flexDirectionRow ? null : `${cls.column}`} ${justifyContentCenter ? `${cls.center}` : null}`}>
+        <div
+            className={`${cls.Container}
+            ${flexDirectionRow ? null : `${cls.column}`}
+            ${justifyContentCenter ? `${cls.center}` : null}`}
+        >
             {children}
         </div>
     );
