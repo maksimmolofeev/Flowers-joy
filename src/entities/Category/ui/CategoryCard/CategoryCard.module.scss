@@ -25,8 +25,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgb(0 0 0 / 50%);
     transition: all 0.5s;
+
     &:hover {
         opacity: 0;
     }
@@ -38,13 +39,13 @@
     color: var(--third-color);
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (width <= 880px) {
     .CategoryCard {
         width: 49%;
     }
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (width <= 880px) {
     .CategoryCard {
         width: 100%;
     }

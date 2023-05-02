@@ -1,11 +1,12 @@
-@import './variables/global.scss';
-@import './reset.scss';
+@import './variables/global';
+@import './reset';
 
 body {
     background-color: var(--bg-primary-color);
     font-size: var(--font-m);
     width: 100vw;
     overflow-x: hidden;
+
     ::-webkit-scrollbar {
         width: 0;
     }

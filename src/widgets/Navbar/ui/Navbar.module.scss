@@ -6,7 +6,7 @@
     left: 0;
     z-index: 50;
     width: 100vw;
-    box-shadow: 0px 5px 10px var(--bg-secondary-color);
+    box-shadow: 0 5px 10px var(--bg-secondary-color);
 }
 
 .content {
@@ -34,7 +34,7 @@
     width: var(--menu-icons-size);
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (width <= 640px) {
     .logo {
         width: 150px;
     }
