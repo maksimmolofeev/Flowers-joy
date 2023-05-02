@@ -1,3 +1,4 @@
+import { Basket } from 'pages/Basket';
 import { BouquetPage } from 'pages/BouquetPage';
 import { CatalogPage } from 'pages/CatalogPage';
 import { DeliveryInfoPage } from 'pages/DeliveryInfoPage';
@@ -8,14 +9,16 @@ export enum AppRoutes {
     MAIN = 'main',
     CATALOG = 'catalog',
     BOUQUET = 'bouquet',
-    DELIVERY_INFO = 'delivery_info'
+    DELIVERY_INFO = 'delivery_info',
+    BASKET = 'basket'
 }
 
 export const RoutePath: Record<AppRoutes, string> = {
     [AppRoutes.MAIN]: '/',
     [AppRoutes.CATALOG]: '/catalog',
     [AppRoutes.BOUQUET]: '/catalog/',
-    [AppRoutes.DELIVERY_INFO]: '/delivery_info'
+    [AppRoutes.DELIVERY_INFO]: '/delivery_info',
+    [AppRoutes.BASKET]: '/basket'
 }
 
 export const routeConfig: Record<AppRoutes, RouteProps> = {
@@ -34,5 +37,9 @@ export const routeConfig: Record<AppRoutes, RouteProps> = {
     [AppRoutes.DELIVERY_INFO]: {
         path: RoutePath.delivery_info,
         element: <DeliveryInfoPage />
+    },
+    [AppRoutes.BASKET]: {
+        path: RoutePath.basket,
+        element: <Basket />
     }
 }

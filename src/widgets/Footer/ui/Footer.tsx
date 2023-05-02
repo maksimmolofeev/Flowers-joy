@@ -6,8 +6,10 @@ interface FooterProps {
 export const Footer: React.FC<FooterProps> = (props) => {
 
     return (
-        <div className={cls.Footer}>
-            
-        </div>
+        <footer className={cls.footer}>
+            <div className={cls.content}>
+                <p className={cls.text}>© {new Date().getFullYear()} FlowersJoy</p>
+            </div>
+        </footer>
     );
 }

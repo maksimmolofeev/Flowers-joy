@@ -13,6 +13,8 @@ import { IconContext } from 'react-icons';
 import { FC, useEffect, useState } from 'react';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { Contacts } from 'shared/ui/Contacts/Contacts';
+import { AppLink, LinkTheme } from 'shared/ui/AppLink/AppLink';
+import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 
 interface NavbarProps {
     active: boolean,
@@ -48,7 +50,9 @@ export const Navbar: FC<NavbarProps> = (props) => {
                     <IconContext.Provider value={{className: `${cls.icons}`}}>
                         <GoSearch />
                         <MdFavoriteBorder />
-                        <BsBasket />
+                        <AppLink to={RoutePath.basket} theme={LinkTheme.ICON}>
+                            <BsBasket />
+                        </AppLink>
                         <Button
                             theme={ButtonTheme.CLEAR}
                             onClick={setActive}

@@ -6,4 +6,12 @@
 .icons {
     width: var(--menu-icons-size);
     height: var(--menu-icons-size);
+    text-decoration: none;
+    color: black;
+
+    :hover {
+        width: calc(var(--menu-icons-size) + 5px);
+    }
 }
+
+
