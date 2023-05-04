@@ -1,5 +1,6 @@
 .Companies {
     margin-top: var(--spacing-between-blocks);
+    background: var(--bg-secondary-color);
 }
 
 .title {
@@ -16,7 +17,7 @@
 .img_block {
     width: 45%;
     margin-right: 15px;
-    max-height: 600px;
+    max-height: 500px;
     display: flex;
     align-items: center;
     overflow: hidden;

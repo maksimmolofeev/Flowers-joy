@@ -23,19 +23,15 @@ export const Companies: React.FC<CompaniesProps> = (props) => {
                         <img className={cls.img} src={URL} alt="" />
                     </div>
                     <div className={cls.text}>
-
                         <Text
-                            size={TextSize.L}
                             text='Мы поможем оформить вам любое пространство: квартиру, дом, офис,
                                 салон красоты, ресторан или любую другую зону.'
                         />
                         <Text
-                            size={TextSize.L}
                             text='В первую очередь мы заботимся о свежести цветови эстетике создаваемых
                                 букетов  и композиций'
                         />
                         <Text
-                            size={TextSize.L}
                             text='Наша задача быть надежными партнерами и дарить эмоции радости нашим клиентам'/>
                     </div>
                 </div>

@@ -3,6 +3,7 @@ import cls from './BrieflyDelivery.module.scss';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { AppLink } from 'shared/ui/AppLink/AppLink';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
+import { Text } from 'shared/ui/Text/Text';
 
 
 export const BrieflyDelivery = () => {
@@ -16,10 +17,17 @@ export const BrieflyDelivery = () => {
                     <img className={cls.img} src={URL} alt="" />
                 </div>
                 <div className={cls.text}>
-                    <p>Каждый букет мы собираем из самых свежих цветов, стильно упаковываем и бережно доставляем.</p>
-                    <p>Доставка осуществляется в специальных  транспортировочных боксах в одноразовой
-                        вазочке с водой.</p>
-                    <p>Наши цветы обрадуют вас неимоверной стойкостью и изумительным ароматом</p>
+                    <Text
+                        text='Каждый букет мы собираем из самых свежих цветов,
+                            стильно упаковываем и бережно доставляем.'
+                    />
+                    <Text
+                        text='Доставка осуществляется в специальных  транспортировочных боксах в одноразовой
+                        вазочке с водой.'
+                    />
+                    <Text
+                        text='Наши цветы обрадуют вас неимоверной стойкостью и изумительным ароматом'
+                    />
                     <div className={cls.button}>
                         <Button theme={ButtonTheme.OUTLINE}>
                             <AppLink

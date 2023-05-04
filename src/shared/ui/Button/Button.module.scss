@@ -14,4 +14,9 @@
     color: var(--primary-color);
     font: var(--font-l);
     background: none;
+
+    &_radius {
+        border: 1px solid var(--primary-color);
+        border-radius: 10px;
+    }
 }

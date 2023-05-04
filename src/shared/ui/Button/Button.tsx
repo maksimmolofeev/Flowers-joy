@@ -3,7 +3,8 @@ import cls from './Button.module.scss';
 
 export enum ButtonTheme {
     CLEAR = 'clear',
-    OUTLINE = 'outline'
+    OUTLINE = 'outline',
+    OUTLINE_RADIUS = 'outline_radius',
 }
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
