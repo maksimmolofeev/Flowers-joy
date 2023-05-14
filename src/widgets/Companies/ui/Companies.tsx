@@ -1,6 +1,9 @@
 import { Container } from 'shared/ui/Container/Container';
 import cls from './Companies.module.scss';
 import { Text, TextSize } from 'shared/ui/Text/Text';
+import { Button, ButtonTheme } from 'shared/ui/Button/Button';
+import { useState } from 'react';
+import { CompaniesModal } from 'features/OrderFromCompanies';
 
 interface CompaniesProps {
     isTitle?: boolean
@@ -11,9 +14,17 @@ export const Companies: React.FC<CompaniesProps> = (props) => {
         isTitle
     } = props
 
+    const [isOpenModal, setIsOpenModal] = useState(false)
     // eslint-disable-next-line max-len
     const URL = 'https://1.downloader.disk.yandex.ru/preview/4f55637346d599814db8abd992351beab13df171d5a8553d50776f7c6e5d6a74/inf/JgUCMq8jiXgZEf2uBgES3KmYkbDiQU3wyMrFdcinMqe3r8eWzjgI3sSWqQjdLPwSIhy7I-8jwA2CJ44DmqSRHQ%3D%3D?uid=1438650916&filename=IMG_20221214_140907.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1438650916&tknv=v2&size=1894x913'
 
+    const onCloseModal = () => {
+        setIsOpenModal(false)
+    }
+
+    const onOpenModal = () => {
+        setIsOpenModal(true)
+    }
     return (
         <section className={cls.Companies}>
             <Container flexDirectionRow={false}>
@@ -33,6 +44,10 @@ export const Companies: React.FC<CompaniesProps> = (props) => {
                         />
                         <Text
                             text='Наша задача быть надежными партнерами и дарить эмоции радости нашим клиентам'/>
+                        <Button theme={ButtonTheme.OUTLINE_RADIUS} onClick={onOpenModal}>
+                            Сделать заявку
+                        </Button>
+                        <CompaniesModal isOpen={isOpenModal} onClose={onCloseModal}/>
                     </div>
                 </div>
             </Container>
