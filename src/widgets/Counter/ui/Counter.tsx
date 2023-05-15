@@ -1,33 +1,17 @@
-import { useDispatch, useSelector } from "react-redux";
 import { Button } from "shared/ui/Button/Button";
-import { counterActions, counterReducer } from "../model/slice/counterSlice";
-import { StateSchema } from "app/providers/StoreProvider/config/StateSchema";
-import { getCounterValue } from "../model/selectors/getCounterValue/getCounterValue";
+import counterStore from "../model/store/counter";
+import { observer } from "mobx-react-lite";
 
-interface CounterProps {
-}
-
-export const Counter: React.FC<CounterProps> = (props) => {
-    const dispatch = useDispatch()
-    const counterValue = useSelector(getCounterValue)
-
-    const increment = () => {
-        dispatch(counterActions.increment())
-    }
-
-    const decrement = () => {
-        dispatch(counterActions.decrement())
-    }
-
+export const Counter = observer(() => {
     return (
         <div>
-            <h1>{counterValue}</h1>
-            <Button onClick={increment}>
+            <h1>{counterStore.counter.value}</h1>
+            <Button onClick={() => counterStore.increment()}>
                 increment
             </Button>
-            <Button onClick={decrement}>
+            <Button onClick={() => counterStore.decrement()}>
                 decrement
             </Button>
         </div>
     );
-}
+})

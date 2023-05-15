@@ -31,8 +31,13 @@ export const Modal: React.FC<ModalProps> = (props) => {
     const handlerContent = (e: React.MouseEvent) => {
         e.stopPropagation()
     }
-    // className={isOpen ? `${cls.Modal} ${cls.opened}` : `${cls.Modal}`}
-    const style = classNames(`${cls.Modal}`, {[`${cls.opened}`] : isOpen}, {[`${cls.isClosing}`] : isClosing})
+
+    const style = classNames(
+        `${cls.Modal}`,
+        {[`${cls.opened}`] : isOpen},
+        {[`${cls.isClosing}`] : isClosing}
+    )
+    
     return (
         <div className={style}>
             <div className={cls.overlay} onClick={closeHandler}>

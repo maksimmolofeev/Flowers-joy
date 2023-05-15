@@ -2,15 +2,20 @@ import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { IBouquet } from '../../model/types/bouquet';
 import cls from './BouquetDescription.module.scss';
 import { AppLink } from 'shared/ui/AppLink/AppLink';
-import { AppRoutes, RoutePath } from 'shared/config/routeConfig/routeConfig';
+import { RoutePath } from 'shared/config/routeConfig/routeConfig';
+import { ReactNode } from 'react';
 
 interface BouquetDescriptionProps {
-    bouquet: IBouquet
+    bouquet: IBouquet,
+    liked?: ReactNode
 }
+
+const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 export const BouquetDescription: React.FC<BouquetDescriptionProps> = (props) => {
     const {
-        bouquet
+        bouquet,
+        liked
     } = props
 
     return (
@@ -23,6 +28,7 @@ export const BouquetDescription: React.FC<BouquetDescriptionProps> = (props) => 
             <div className={cls.content}>
                 <div className={cls.img_wrapper}>
                     <img className={cls.img} src={bouquet?.url} alt="" />
+                    {liked}
                 </div>
                 <div className={cls.text_content}>
                     <h1 className={cls.title}>{bouquet?.title}</h1>

@@ -5,7 +5,6 @@ import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 
 interface CategoryCardProps {
     category: ICategory,
-    changeActiveCategory: (category: string) => void
 }
 
 export const CategoryCard: React.FC<CategoryCardProps> = (props) => {

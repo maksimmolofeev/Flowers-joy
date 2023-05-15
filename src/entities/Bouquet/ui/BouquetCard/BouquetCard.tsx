@@ -2,14 +2,17 @@ import { useNavigate } from 'react-router-dom';
 import { IBouquet } from '../../model/types/bouquet';
 import cls from './BouquetCard.module.scss';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
+import { ReactNode } from 'react';
 
 interface BouquetCardProps {
-    bouquet: IBouquet
+    bouquet: IBouquet,
+    liked?: ReactNode
 }
 
 export const BouquetCard: React.FC<BouquetCardProps> = (props) => {
     const {
-        bouquet
+        bouquet,
+        liked
     } = props
 
     const navigate = useNavigate()
@@ -18,6 +21,7 @@ export const BouquetCard: React.FC<BouquetCardProps> = (props) => {
         <div className={cls.BouquetCard}>
             <div className={cls.img_container}>
                 <img className={cls.img} src={bouquet.url} alt="" />
+                {liked}
             </div>
             <div
                 onClick={() => navigate(`${RoutePath.bouquet}${bouquet.id}`)}

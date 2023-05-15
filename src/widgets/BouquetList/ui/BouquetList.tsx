@@ -2,14 +2,14 @@ import axios from 'axios';
 import cls from './BouquetList.module.scss';
 import { useEffect, useState, useCallback } from 'react';
 import { BouquetCard, IBouquet } from 'entities/Bouquet';
-import { useSelector } from 'react-redux';
-import { getActiveCategory } from 'entities/Category';
+import { observer } from 'mobx-react-lite';
+import { categoriesStore } from 'entities/Category';
 
-export const BouquetList = () => {
+export const BouquetList = observer(() => {
     const URL = 'http://localhost:5000/bouquets';
+    const CATEGORY = categoriesStore.activeCategory
     const [allBouquets, setAllBouquets] = useState<IBouquet[]>([])
     const [bouquetsByCategory, setBouquetsByCategory] = useState<IBouquet[]>([])
-    const activeCategory = useSelector(getActiveCategory)
 
     const fetchBouquets = async () => {
         const response = await axios.get(URL)
@@ -17,15 +17,15 @@ export const BouquetList = () => {
         setBouquetsByCategory(response.data)
     }
     const sortBouquetByCategory = useCallback(() => {
-        if (activeCategory === '') {
+        if (CATEGORY === null) {
             setBouquetsByCategory([...allBouquets])
         } else {
             const newBouquetsByCategory = allBouquets.filter(bouquet => 
-                bouquet.categories.includes(activeCategory)
+                bouquet.categories.includes(categoriesStore.activeCategory.title)
             )
             setBouquetsByCategory([...newBouquetsByCategory])
         }
-    }, [activeCategory, allBouquets])
+    }, [CATEGORY, allBouquets])
 
     useEffect(() => {
         fetchBouquets()
@@ -33,7 +33,7 @@ export const BouquetList = () => {
 
     useEffect(() => {
         sortBouquetByCategory()
-    }, [activeCategory, sortBouquetByCategory])
+    }, [sortBouquetByCategory])
 
     return (
         <div className={cls.BouquetList}>
@@ -44,4 +44,4 @@ export const BouquetList = () => {
             )}
         </div>
     );
-}
+})

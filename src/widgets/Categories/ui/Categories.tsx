@@ -2,14 +2,12 @@ import { Container } from 'shared/ui/Container/Container';
 import cls from './Categories.module.scss';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { CategoryCard, ICategory, categoriesActions } from 'entities/Category';
-import { useDispatch } from 'react-redux';
+import { CategoryCard, ICategory } from 'entities/Category';
 
 interface CategoriesProps {
 }
 
 export const Categories: React.FC<CategoriesProps> = (props) => {
-    const dispatch = useDispatch()
     const URL = 'http://localhost:5000/categories';
     const [categories, setCategories] = useState<ICategory[]>([])
 
@@ -22,10 +20,6 @@ export const Categories: React.FC<CategoriesProps> = (props) => {
         fetchCategories()
     }, [])
 
-    const changeActiveCategory = (category: string) => {
-        dispatch(categoriesActions.changeCategory(category))
-    }
-
     return (
         <section className={cls.Categories}>
             <Container flexDirectionRow={false}>
@@ -33,7 +27,6 @@ export const Categories: React.FC<CategoriesProps> = (props) => {
                 <div className={cls.content}>
                     {categories.map(category => 
                         <CategoryCard
-                            changeActiveCategory={changeActiveCategory}
                             key={category.id} 
                             category={category}
                         />

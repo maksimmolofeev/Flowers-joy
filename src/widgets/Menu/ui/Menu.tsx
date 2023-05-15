@@ -46,6 +46,18 @@ export const Menu: React.FC<MenuProps> = (props) => {
                 >
                     Доставка
                 </AppLink>
+                <AppLink
+                    onClick={() => setActive(false)}
+                    to={RoutePath.basket}
+                >
+                    Корзина
+                </AppLink>
+                <AppLink
+                    onClick={() => setActive(false)}
+                    to={RoutePath.liked}
+                >
+                    Понравилось
+                </AppLink>
 
                 {
                     width > 640

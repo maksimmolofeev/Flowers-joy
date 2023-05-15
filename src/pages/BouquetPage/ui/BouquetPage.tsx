@@ -1,5 +1,6 @@
 import axios from "axios";
 import { BouquetDescription, IBouquet } from "entities/Bouquet";
+import { Liked } from "features/Liked";
 import { useEffect, useState, useCallback } from "react";
 import { useParams } from "react-router-dom";
 
@@ -24,7 +25,7 @@ const BouquetPage = () => {
 
     return (
         <div>
-            <BouquetDescription bouquet={bouquet}/>
+            <BouquetDescription liked={<Liked />} bouquet={bouquet}/>
         </div>
     );
 }

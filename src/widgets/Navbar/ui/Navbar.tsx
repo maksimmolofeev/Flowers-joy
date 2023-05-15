@@ -1,8 +1,4 @@
 import Logo from 'shared/assets/icons/Logo.svg'
-import { SiWhatsapp } from 'react-icons/si';
-import { FaTelegramPlane } from 'react-icons/fa';
-import { FiPhoneCall } from 'react-icons/fi';
-import { FaInstagram } from 'react-icons/fa';
 import { GoSearch } from 'react-icons/go';
 import { MdFavoriteBorder } from 'react-icons/md';
 import { BsBasket } from 'react-icons/bs';
@@ -51,7 +47,9 @@ export const Navbar: FC<NavbarProps> = (props) => {
                 <div className={cls.features}>
                     <IconContext.Provider value={{className: `${cls.icons}`}}>
                         <GoSearch />
-                        <MdFavoriteBorder />
+                        <AppLink to={RoutePath.liked} theme={LinkTheme.ICON}>
+                            <MdFavoriteBorder />
+                        </AppLink>
                         <AppLink to={RoutePath.basket} theme={LinkTheme.ICON}>
                             <BsBasket />
                         </AppLink>
@@ -61,7 +59,6 @@ export const Navbar: FC<NavbarProps> = (props) => {
                         >
                             {active ? <AiOutlineClose /> : <FiMenu />}
                         </Button>
-                        
                     </IconContext.Provider>
                 </div>
             </div>
