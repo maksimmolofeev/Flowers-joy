@@ -1,0 +1,15 @@
+.BouquetInBasket {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    padding: 5px;
+    border-top: 0.5px solid var(--primary-color);
+    overflow: hidden;
+}
+
+.img {
+    max-width: 50px;
+    max-height: 70px;
+}

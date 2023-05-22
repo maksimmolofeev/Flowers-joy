@@ -33,7 +33,10 @@ export const Bestsellers: React.FC<BestsellersProps> = (props) => {
                     <div className={cls.slider_line}>
                         {bestsellers.map(bouquet =>
                             <div key={bouquet.id} className={cls.bouquet_card}>
-                                <BouquetCard liked={<Liked size={26}/>} bouquet={bouquet} />
+                                <BouquetCard
+                                    liked={<Liked size={26} bouquet={bouquet}/>}
+                                    bouquet={bouquet}
+                                />
                             </div>
                         )}
                     </div>

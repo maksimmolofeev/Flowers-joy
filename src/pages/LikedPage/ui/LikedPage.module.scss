@@ -1,0 +1,13 @@
+.LikedPage {
+    margin-top: calc(var(--height-navbar) + 20px);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+}
+
+.title {
+    margin-bottom: 20px;
+}

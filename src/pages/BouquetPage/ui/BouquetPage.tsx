@@ -22,10 +22,12 @@ const BouquetPage = () => {
         fetchBouquet()
     }, [fetchBouquet])
 
-
     return (
         <div>
-            <BouquetDescription liked={<Liked />} bouquet={bouquet}/>
+            <BouquetDescription
+                liked={<Liked bouquet={bouquet}/>}
+                bouquet={bouquet}
+            />
         </div>
     );
 }

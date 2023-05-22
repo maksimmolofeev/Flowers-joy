@@ -1,16 +1,14 @@
-import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { IBouquet } from '../../model/types/bouquet';
 import cls from './BouquetDescription.module.scss';
 import { AppLink } from 'shared/ui/AppLink/AppLink';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import { ReactNode } from 'react';
+import { AddBasket } from 'features/AddBasket';
 
 interface BouquetDescriptionProps {
     bouquet: IBouquet,
     liked?: ReactNode
 }
-
-const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 export const BouquetDescription: React.FC<BouquetDescriptionProps> = (props) => {
     const {
@@ -33,9 +31,7 @@ export const BouquetDescription: React.FC<BouquetDescriptionProps> = (props) => 
                 <div className={cls.text_content}>
                     <h1 className={cls.title}>{bouquet?.title}</h1>
                     <p>{bouquet?.price}</p>
-                    <Button theme={ButtonTheme.OUTLINE}>
-                        Заказать
-                    </Button>
+                    <AddBasket bouquet={bouquet}/>
                     <p>Состав: какой-то цветок</p>
                 </div>
             </div>
